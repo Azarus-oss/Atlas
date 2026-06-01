@@ -1,5 +1,5 @@
 name: atlas
-description: Atlas - Internet décentralisé multimédia & messagerie P2P
+description: Atlas - Internet décentralisé multimédia & messagerie P2P avec chiffrement E2E
 
 publish_to: 'none'
 
@@ -21,12 +21,12 @@ dependencies:
   image_picker: ^1.1.2
   path_provider: ^2.1.4
   shared_preferences: ^2.3.0
-  # Decentralisé
   http: ^1.2.2
-  # Nostr (WS + events)
-  nostr: ^0.5.0 # ou on implémente custom
-  # Pour IPFS simple
-  # + flutter_ffi si besoin iroh plus tard
+  # Nostr + E2E
+  nostr: ^0.5.0
+  pointycastle: ^4.0.0
+  bip39: ^1.0.7
+  ed25519_edwards: ^0.3.0
 
 dev_dependencies:
   flutter_test:
@@ -35,5 +35,3 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  assets:
-    - assets/
