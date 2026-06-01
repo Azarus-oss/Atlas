@@ -1,0 +1,25 @@
+# Flutter
+
+# Dependencies
+*.iml
+*.lock
+pubspec.lock
+
+# Android
+android/.gradle
+android/app/build
+
+# iOS
+ios/Pods
+ios/.symlinks
+ios/Flutter/App.framework
+
+# macOS/Windows/Linux
+macos/Pods
+windows/flutter
+linux/flutter
+
+# Misc
+.dart_tool/
+.build/
+*.log

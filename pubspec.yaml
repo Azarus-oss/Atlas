@@ -1,0 +1,39 @@
+name: atlas
+description: Atlas - Internet décentralisé multimédia & messagerie P2P
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+  flutter: '>=3.24.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1
+  dio: ^5.7.0
+  web_socket_channel: ^3.0.0
+  uuid: ^4.5.0
+  cached_network_image: ^3.4.0
+  video_player: ^2.9.0
+  image_picker: ^1.1.2
+  path_provider: ^2.1.4
+  shared_preferences: ^2.3.0
+  # Decentralisé
+  http: ^1.2.2
+  # Nostr (WS + events)
+  nostr: ^0.5.0 # ou on implémente custom
+  # Pour IPFS simple
+  # + flutter_ffi si besoin iroh plus tard
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
